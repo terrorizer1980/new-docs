@@ -1012,6 +1012,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.12.5":
+  version "7.14.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.6.tgz#535203bc0892efc7dec60bdc27b2ecf6e409062d"
+  integrity sha512-/PCB2uJ7oM44tz8YhC4Z/6PeOKXp4K588f+5M3clr1M4zbqztlo0XEfJ2LEzj/FgwfgGcIdl8n7YYjTCI0BYwg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.10.2":
   version "7.11.0"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.11.0.tgz#c8882afdb737306cb127f58f0befec4def31beb5"
@@ -3202,6 +3209,13 @@ axe-core@^3.5.4:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-3.5.5.tgz#84315073b53fa3c0c51676c588d59da09a192227"
   integrity sha512-5P0QZ6J5xGikH780pghEdbEKijCTrruK9KxtPZCFWUpef0f6GipO+xEZ5GKCb020mmqgbiNO6TcA55CriL784Q==
 
+axios@0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
+  dependencies:
+    follow-redirects "^1.10.0"
+
 axios@^0.19.0, axios@^0.19.2:
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
@@ -3372,10 +3386,20 @@ babel-plugin-remove-graphql-queries@^2.9.17:
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.17.tgz#f66c421a58392ddca8b2f06473ca0eb2c4ec632d"
   integrity sha512-ThFGZlxD+U4H+aSX4DRpz7pdJq6Y7wob0rDDx7Q2rZPp9lbNfnGACUjPyTiCIy8EsBMpPYvT4WZjb4Gd0Xq6zQ==
 
-"babel-plugin-styled-components@>= 1", babel-plugin-styled-components@^1.10.0:
+"babel-plugin-styled-components@>= 1":
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.11.1.tgz#5296a9e557d736c3186be079fff27c6665d63d76"
   integrity sha512-YwrInHyKUk1PU3avIRdiLyCpM++18Rs1NgyMXEAQC33rIXs/vro0A+stf4sT0Gf22Got+xRWB8Cm0tw+qkRzBA==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0"
+    "@babel/helper-module-imports" "^7.0.0"
+    babel-plugin-syntax-jsx "^6.18.0"
+    lodash "^4.17.11"
+
+babel-plugin-styled-components@^1.11.1:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.13.2.tgz#ebe0e6deff51d7f93fceda1819e9b96aeb88278d"
+  integrity sha512-Vb1R3d4g+MUfPQPVDMCGjm3cDocJEUTR7Xq7QS95JWWeksN1wdFRYpD2kulDgI3Huuaf1CZd+NK4KQmqUFh5dA==
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.0.0"
     "@babel/helper-module-imports" "^7.0.0"
@@ -7388,6 +7412,11 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.12.1.tgz#de54a6205311b93d60398ebc01cf7015682312b6"
   integrity sha512-tmRv0AVuR7ZyouUHLeNSiO6pqulF7dYa3s19c6t+wz9LD69/uSzdMxJ2S91nTI9U3rt/IldxpzMOFejp6f0hjg==
 
+follow-redirects@^1.10.0:
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
+  integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -7758,12 +7787,12 @@ gatsby-plugin-sitemap@^2.4.12:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-styled-components@^3.3.6:
-  version "3.3.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.3.10.tgz#d325535023695382cf0f209382e5e0cc4658e6e6"
-  integrity sha512-2yV3hanEPelf8IwkOa1Sk4RtHh4tuuvdJs2NCnAsHxYEMLlFC4UeG91z4Q4t69G7RvZ2W8PzdByLK5N5C97CQQ==
+gatsby-plugin-styled-components@^3.3.13:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.10.0.tgz#beeafee695b1a42df6584ca5afcaa9b461eb29f5"
+  integrity sha512-CDNNvRxLS4dsQI2fv57T+0VUqapRtiDXm6SUsxyuVuEhJCyDGu1g9jg+9ty0HfUEDcW8JexlRJO5srkdYp1x1g==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.12.5"
 
 gatsby-plugin-typescript@^2.4.18:
   version "2.4.18"
@@ -15536,10 +15565,10 @@ stealthy-require@^1.1.1:
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stellar-base@^3.0.3:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/stellar-base/-/stellar-base-3.0.4.tgz#9f9b183921886c326609c37b701a725320e5e004"
-  integrity sha512-aSa5T7/y+jYmgdpyZKwvc13u1pR4MLI7yaDMaVV7tGp98lFcvd1F37QlZXf0j5QS7NVVpXWZ5iDmftZcjx2Euw==
+stellar-base@^5.2.1:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/stellar-base/-/stellar-base-5.3.0.tgz#15e8d9f3767a62bda14d55f0c4347d27987ae1f6"
+  integrity sha512-8LCOX/D/Zp5DBhcTwXQSh9v25sHivkCJc+FSPncqhvMYgvQQg8w+2kj9hCFg1SAxkLJOjSpfzObrUaTl+CFFjw==
   dependencies:
     base32.js "^0.1.0"
     bignumber.js "^4.0.0"
@@ -15551,23 +15580,23 @@ stellar-base@^3.0.3:
   optionalDependencies:
     sodium-native "^2.3.0"
 
-stellar-sdk@^5.0.4:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/stellar-sdk/-/stellar-sdk-5.0.4.tgz#4839c52b70ab17c13517cd93cea4b04d5110580b"
-  integrity sha512-wwGfN5k+k0qoJkLZvScsnGKd5d2dE+DBRxzTnHur4CwlYvMWIzRY0GWS9YB3yCZmBaKsjC+bKEzacgSFge2PGA==
+stellar-sdk@^8.2.3:
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/stellar-sdk/-/stellar-sdk-8.2.3.tgz#2970211877937e487b4e1f88021200cf0ddf8603"
+  integrity sha512-RlrR6DD+706vgA1iVDXteU/x3bdqFDthf+4M3C19D/owmF0GCR/FoRQpnPqqRJ0C/rbbdZ6YjAyKO6Q0GSbDWw==
   dependencies:
     "@types/eventsource" "^1.1.2"
     "@types/node" ">= 8"
     "@types/randombytes" "^2.0.0"
     "@types/urijs" "^1.19.6"
-    axios "^0.19.0"
+    axios "0.21.1"
     bignumber.js "^4.0.0"
     detect-node "^2.0.4"
     es6-promise "^4.2.4"
     eventsource "^1.0.7"
     lodash "^4.17.11"
     randombytes "^2.1.0"
-    stellar-base "^3.0.3"
+    stellar-base "^5.2.1"
     toml "^2.3.0"
     tslib "^1.10.0"
     urijs "^1.19.1"
